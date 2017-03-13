@@ -1,0 +1,6 @@
+[submodule "rpi_ws281x"]
+	path = rpi_ws281x
+	url = https://github.com/jgarff/rpi_ws281x
+[submodule "python-pulseaudio"]
+	path = python-pulseaudio
+	url = https://github.com/Valodim/python-pulseaudio
