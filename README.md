@@ -9,7 +9,7 @@ A developing virtual assistant for your home to run on a Raspberry PI.
 * Install PulseAudio ```sudo apt-get install pulseaudio```
 * Go to ```python-pulseaudio``` and run ```sudo python setup.py install```
 * Make sure PulseAudio starts on launch as follows ```sudo pulseaudio --daemonize=no --system --realtime``` (for example with ``` sudo crontab -e```)
-* Set your audio device correctly in ```NeoPixel.py``` on line 9. In this example we use an audio USB device but yours can differ. 
+* Set your audio device correctly in ```NeoPixel.py``` on line 9. In this example we use an audio USB device but yours can differ. To find out what the name is of yours you can run ```pactl list short sinks```
 * Run ```ShoobAI.py``` as ```sudo python ShoobAI.py``` to test if all works. It will print out any problems found.
 
 ## Requirements
