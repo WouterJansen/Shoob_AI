@@ -4,9 +4,10 @@ import NeoPixel
 
 
 def initialSetup():
-    f = Figlet(font='slant')
-    print f.renderText('SHOOB AI')
-    print "Shoob Virtual Assistant 1.0"
+    f = Figlet(font='small')
+    print f.renderText('           SHOOB AI')
+    print " " * 18 + "Virtual Assistant v1.0"
+    print " " * 14 + "github.com/WouterJansen/Shoob_AI"
     print '-' * 60
     NeoPixel.setupNeoPixel()
     setupNeoThread = NeoPixel.SetupGreen()
