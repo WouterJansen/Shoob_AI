@@ -3,14 +3,14 @@ A developing virtual assistant for your home to run on a Raspberry PI. The goal 
 Amazon Alexa system by having a Neopixel LED ring react to the sound and implement several custom modules to support Google Cast, home automation and others.
 
 # Setup
+* ```sudo apt-get install build-essential python-dev git scons swig```
 * Go to ```rpi_ws281x/python``` and run ```sudo python setup.py install```
 
 # Requirements
 * Raspberry PI running Raspbian
 * PulseAudio (add ```sudo pulseaudio --daemonize=no --system --realtime``` to your startup scripts for it to work)
-* a 12 LED Neopixel ring connected as in the picture below and the following setup followed:
-  * ```sudo apt-get install build-essential python-dev git scons swig```
-  * ![raspberry-pi-neopixel]
+* a 12 LED Neopixel ring connected as in the picture below:
+  ![raspberry-pi-neopixel]
   
   
   
