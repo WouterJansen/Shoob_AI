@@ -2,7 +2,7 @@
 A developing virtual assistant for your home to run on a Raspberry PI. 
 
 ## Setup
-* clone this git in your preferred location ```git clone https://github.com/WouterJansen/Shoob_AI.git```
+* clone this git in your preferred location ```git clone --recursive https://github.com/WouterJansen/Shoob_AI.git```
 * Install AdaFruit pyhton library by running ```sudo apt-get install build-essential python-dev git scons swig```
 * Go to ```rpi_ws281x``` and run ```sudo scons``` 
 * Go to ```rpi_ws281x/python```and run ```sudo python setup.py install```
