@@ -18,7 +18,19 @@ Amazon Alexa system by having a Neopixel LED ring react to the sound and impleme
   
   
 # Notes
-* 
+* Make sure to set your audio device correctly in neoPixelAudioReact.py on line 13. In this example we use an audio USB device but yours can differ. If not using onboard audio it's recommended to disable the sound driver. Otherwise this can interfere with the NeoPixel PWM signal:
+  * Alter  ```/lib/modprobe.d/aliases.conf``` to have ```options snd-usb-audio index=-2``` commented out.
+  * create a ```blacklist-rgb-matrix.conf``` file in the same folder with 
+  ```  
+  blacklist snd_bcm2835
+  blacklist snd_pcm
+  blacklist snd_timer
+  blacklist snd_pcsp
+  blacklist snd
+
+  ```
+
+
 # References
 * Using PulseAudio in Python: http://freshfoo.com/posts/pulseaudio_monitoring/
 * Using NeoPixel on Raspberry Pi: https://learn.adafruit.com/neopixels-on-raspberry-pi/overview
