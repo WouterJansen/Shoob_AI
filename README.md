@@ -1,7 +1,7 @@
 # SHOOB AI
 A developing virtual assistant for your home to run on a Raspberry PI. 
 
-# Setup
+## Setup
 * clone this git in your preferred location ```git clone https://github.com/WouterJansen/Shoob_AI.git```
 * Install AdaFruit pyhton library by running ```sudo apt-get install build-essential python-dev git scons swig```
 * Go to ```rpi_ws281x``` and run ```sudo scons``` 
@@ -11,13 +11,13 @@ A developing virtual assistant for your home to run on a Raspberry PI.
 * Make sure PulseAudio starts on launch as follows ```sudo pulseaudio --daemonize=no --system --realtime``` (for example with ``` sudo crontab -e```)
 * Run ```ShoobAI.py``` as ```sudo python ShoobAI.py``` to test if all works. It will print out any problems found.
 
-# Requirements
+## Requirements
 * Raspberry PI running Raspbian
 * a 12 LED Neopixel ring connected as in the picture below:
   ![raspberry-pi-neopixel]
   
   
-# Notes
+## Notes
 * Make sure to set your audio device correctly in ```ShoobAI.py``` on line 13. In this example we use an audio USB device but yours can differ. 
 * If not using onboard audio it's recommended to disable the sound driver. Otherwise this can interfere with the NeoPixel PWM signal:
   * Alter  ```/lib/modprobe.d/aliases.conf``` to have ```options snd-usb-audio index=-2``` commented out.
@@ -44,7 +44,7 @@ A developing virtual assistant for your home to run on a Raspberry PI.
   ```
 
 
-# References
+## References
 * Using PulseAudio in Python: http://freshfoo.com/posts/pulseaudio_monitoring/
 * Using NeoPixel on Raspberry Pi: https://learn.adafruit.com/neopixels-on-raspberry-pi/overview  
   
