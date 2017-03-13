@@ -3,6 +3,7 @@ A developing virtual assistant for your home to run on a Raspberry PI. The goal 
 Amazon Alexa system by having a Neopixel LED ring react to the sound and implement several custom modules to support Google Cast, home automation and others.
 
 # Setup
+* clone this git in your preferred location ```git clone https://github.com/WouterJansen/Shoob_AI.git```
 * ```sudo apt-get install build-essential python-dev git scons swig```
 * Go to ```rpi_ws281x/python``` and run ```sudo python setup.py install```
 
