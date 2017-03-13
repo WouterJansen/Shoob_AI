@@ -9,7 +9,7 @@ Amazon Alexa system by having a Neopixel LED ring react to the sound and impleme
 * Go to ```rpi_ws281x/python```and run ```sudo python setup.py install```
 * Install PulseAudio ```sudo apt-get install pulseaudio```
 * Go to ```python-pulseaudio``` and run ```sudo python setup.py install```
-* Make sure PulseAudio starts on launch as follows ```sudo pulseaudio --daemonize=no --system --realtime``` (for example with ``` sudo crontab -e```
+* Make sure PulseAudio starts on launch as follows ```sudo pulseaudio --daemonize=no --system --realtime``` (for example with ``` sudo crontab -e```)
 * Run neoPixelAudioReact.py as ```sudo python neoPixelAudioReact.py``` to test if all works. It will print out any problems found.
 
 # Requirements
