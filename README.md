@@ -1,6 +1,5 @@
 # SHOOB AI
-A developing virtual assistant for your home to run on a Raspberry PI. The goal of this project is to implement several new modules to the
-Amazon Alexa system by having a Neopixel LED ring react to the sound and implement several custom modules to support Google Cast, home automation and others.
+A developing virtual assistant for your home to run on a Raspberry PI. 
 
 # Setup
 * clone this git in your preferred location ```git clone https://github.com/WouterJansen/Shoob_AI.git```
