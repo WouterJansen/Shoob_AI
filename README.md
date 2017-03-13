@@ -8,6 +8,8 @@ This git has the entire project.
 # Requirements
 * Raspberry PI running Raspbian
 * PulseAudio (add ```sudo pulseaudio --daemonize=no --system --realtime``` to your startup scripts for it to work)
+* a Neopixel ring connected as in the picture below and the following setup followed:
+** test
 
 
 
