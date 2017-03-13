@@ -146,7 +146,7 @@ class AudioReact(threading.Thread):
 
     def run(self):
         fadeIn(Color(0, 0, 255))
-        print datetime.now().strftime('%H:%M:%S') + " - NEOPIXEL - listening and reacting"
+        print datetime.now().strftime('%H:%M:%S') + " - Listening and NeoPixel Reacting"
         monitor = setupPulseAudio()
         fadeIn(Color(0, 0, 255))
         for sample in monitor:
@@ -155,7 +155,7 @@ class AudioReact(threading.Thread):
             strip.show()
             if not self.listening:
                 fadeOut(Color(0, 0, 255))
-                print datetime.now().strftime('%H:%M:%S') + " - NEOPIXEL - stopped listening"
+                print datetime.now().strftime('%H:%M:%S') + " - Stopped Listening and NeoPixel Reacting"
                 return
 
 
