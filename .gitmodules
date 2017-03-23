@@ -4,3 +4,6 @@
 [submodule "python-pulseaudio"]
 	path = python-pulseaudio
 	url = https://github.com/Valodim/python-pulseaudio
+[submodule "AlexaPi"]
+	path = AlexaPi
+	url = https://github.com/WouterJansen/AlexaPi
