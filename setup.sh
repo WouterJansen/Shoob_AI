@@ -7,7 +7,7 @@ scons
 cd ./python
 python setup.py install
 cd ..
-cd..
+cd ..
 sudo apt install pulseaudio pavucontrol -y
 sudo apt remove pavumeter paman padevchooser -y
 cd python-pulseaudio
