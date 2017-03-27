@@ -2,6 +2,10 @@
 
 set -o nounset # Fail when variable is used, but not initialized
 set -o errexit # Fail on unhandled error exits
+set -o pipefail # Fail when part of piped execution fails
+
+pushd "$(dirname "$0")/../" > /dev/null
+ALEXASRC_DIRECTORY=$(pwd -P)
 popd > /dev/null
 
 if [ "$EUID" -ne 0 ]; then
