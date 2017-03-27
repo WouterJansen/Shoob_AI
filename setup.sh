@@ -1,5 +1,17 @@
 #!/bin/bash
 
+set -o nounset # Fail when variable is used, but not initialized
+set -o errexit # Fail on unhandled error exits
+set -o pipefail # Fail when part of piped execution fails
+
+pushd "$(dirname "$0")/../" > /dev/null
+popd > /dev/null
+
+if [ "$EUID" -ne 0 ]; then
+    echo "Please run as root"
+	exit
+fi
+
 echo "Installing SHOOB AI. Please respond to input when it shows to configure Alexa"
 echo ""
 apt-get update
