@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "Installing SHOOB AI. Please respond to input when it shows to configure Alexa"
 echo ""
 apt-get update
@@ -38,7 +39,6 @@ adduser pulse audio
 NAME_default="pi"
 echo "Which is the username?"
 read -r -p "Your username [${NAME_default}]: " NAME
-
 if [ "${NAME}" == "" ]; then
     NAME=${NAME_default}
 fi
