@@ -8,8 +8,5 @@ echo "Which username are you using?"
 read -r -p "Your username [${OS_default}]: " OS
 if [ "${OS}" == "" ]; then
     OS=${OS_default}
-elif [ ! -f "./inc/os/${OS}.sh" ]; then
-    echo "Incorrect value. Exiting."
-    exit
 fi
 adduser "${OS}" pulse-access
