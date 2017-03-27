@@ -3,8 +3,6 @@
 set -o nounset # Fail when variable is used, but not initialized
 set -o errexit # Fail on unhandled error exits
 
-pushd "$(dirname "$0")/../" > /dev/null
-
 if [ "$EUID" -ne 0 ]; then
     echo "Please run as root"
 	exit
