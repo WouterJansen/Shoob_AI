@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Installing SHOOB AI dependencies"
+echo "Installing SHOOB AI. Please respond to input when it shows to configure Alexa"
 echo ""
 apt-get update
 echo ""
