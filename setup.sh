@@ -34,7 +34,7 @@ echo "autospawn=no" | sudo tee --append /var/lib/AlexaPi/.config/pulse/client.co
 chown -R alexapi:alexapi /var/lib/AlexaPi/
 usermod --home /var/lib/AlexaPi alexapi
 adduser pulse audio
-adduser <username or pi> pulse-access
+adduser pi pulse-access
 adduser alexapi pulse-access
 cat <<EOF >/etc/systemd/system/pulseaudio.service
 [Unit]
