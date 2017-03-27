@@ -51,6 +51,6 @@ EOF
 systemctl enable pulseaudio.service
 cd ..
 cd ./AlexaPi/src/
-sed -i '13s/.*/input_device: "pulse"/' config.yaml
-sed -i '22s/.*/output: "pulse"/' config.yaml
-sed -i '25s/.*/output_device: ""/' config.yaml
+sed -i '13s/.*/    input_device: "pulse"/' config.yaml
+sed -i '22s/.*/    output: "pulse"/' config.yaml
+sed -i '25s/.*/    output_device: ""/' config.yaml
