@@ -2,7 +2,6 @@
 
 set -o nounset # Fail when variable is used, but not initialized
 set -o errexit # Fail on unhandled error exits
-set -o pipefail # Fail when part of piped execution fails
 
 OS_default="pi"
 echo "Which username are you using?"
