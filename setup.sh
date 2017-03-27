@@ -48,4 +48,4 @@ Type=simple
 PrivateTmp=true
 ExecStart=/usr/bin/pulseaudio --system --realtime --disallow-exit --no-cpu-limit
 EOF
-sudo systemctl enable pulseaudio.service
+systemctl enable pulseaudio.service
