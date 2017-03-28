@@ -26,6 +26,12 @@ sudo apt remove pavumeter paman padevchooser -y
 cd python-pulseaudio
 python setup.py install
 echo ""
+echo "-- Configuring AlexaPi --"
+echo ""
+cd ..
+cd AlexaPi/src/scripts
+./setup.sh
+echo ""
 echo "-- Disabling audio kernel module --"
 echo ""
 cat <<EOF >/etc/modprobe.d/snd-blacklist.conf
@@ -37,10 +43,7 @@ echo ""
 mkdir -p /var/lib/AlexaPi/.config/pulse
 cp /etc/pulse/client.conf /var/lib/AlexaPi/.config/pulse/
 echo "autospawn=no" | sudo tee --append /var/lib/AlexaPi/.config/pulse/client.conf > /dev/null
-chown -R alexapi:alexapi /var/lib/AlexaPi/
-usermod --home /var/lib/AlexaPi alexapi
 adduser pulse audio
-
 NAME_default="pi"
 echo "Which is the username?"
 read -r -p "Your username [${NAME_default}]: " NAME
@@ -48,7 +51,7 @@ if [ "${NAME}" == "" ]; then
     NAME=${NAME_default}
 fi
 adduser "${NAME}" pulse-access
-adduser alexapi pulse-access
+adduser root pulse-access
 cat <<EOF >/etc/systemd/system/pulseaudio.service
 [Unit]
 Description=PulseAudio Daemon
@@ -63,7 +66,6 @@ ExecStart=/usr/bin/pulseaudio --system --realtime --disallow-exit --no-cpu-limit
 EOF
 systemctl enable pulseaudio.service
 cd ..
-cd ./AlexaPi/src/
 sed -i '13s/.*/  input_device: "pulse"/' config.yaml
 sed -i '22s/.*/  output: "pulse"/' config.yaml
 sed -i '25s/.*/  output_device: ""/' config.yaml
