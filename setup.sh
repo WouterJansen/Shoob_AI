@@ -12,6 +12,7 @@ apt-get update
 echo ""
 echo "-- Installing SCONS --"
 echo ""
+pip install pyfiglet
 apt-get install build-essential python-dev git scons swig -y
 cd ./rpi_ws281x
 scons
