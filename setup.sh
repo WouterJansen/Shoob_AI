@@ -5,7 +5,8 @@ if [ "$EUID" -ne 0 ]; then
 	exit
 fi
 
-echo "Installing SHOOB AI. Please respond to input when it shows to configure Alexa"
+echo "Installing SHOOB AI. Please respond to input when it shows."
+echo "TIP: When there is a value in brackets like [default_value], hit Enter to use it."
 echo ""
 apt-get update
 echo ""
