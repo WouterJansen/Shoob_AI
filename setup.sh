@@ -9,10 +9,10 @@ echo "Installing SHOOB AI. Please respond to input when it shows."
 echo "TIP: When there is a value in brackets like [default_value], hit Enter to use it."
 echo ""
 apt-get update
+pip install pyfiglet
 echo ""
 echo "-- Installing SCONS --"
 echo ""
-pip install pyfiglet
 apt-get install build-essential python-dev git scons swig -y
 cd ./rpi_ws281x
 scons
