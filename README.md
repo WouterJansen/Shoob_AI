@@ -1,5 +1,5 @@
 # SHOOB AI
-A developing virtual assistant for your home to run on a Raspberry PI. 
+A developing virtual assistant for your home to run on a Raspberry PI. This project combines work of others and adds some new bits to make a complete project that offers something new to the Alexa family. 
 
 ## Setup
 * clone this git in your preferred location ```git clone --recursive https://github.com/WouterJansen/Shoob_AI.git```
