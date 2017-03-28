@@ -23,7 +23,7 @@ A developing virtual assistant for your home to run on a Raspberry PI.
 
 ## References
 * Using PulseAudio in Python: http://freshfoo.com/posts/pulseaudio_monitoring/
-* Using NeoPixel on Raspberry Pi: https://learn.adafruit.com/neopixels-on-raspberry-pi/overview  
+* Using NeoPixel on Raspberry Pi: https://learn.adafruit.com/neopixels-on-raspberry-pi/overview & https://raspberrytips.nl/neopixel-ws2811-raspberry-pi/
 * see https://github.com/alexa-pi/AlexaPi for most troubleshooting and guides for Alexa itself.  
   
   [raspberry-pi-neopixel]: https://cdn.raspberrytips.nl/wp-content/uploads/2016/05/neopixel-raspberry-pi-led-ws281x-600x292.png "from  :https://raspberrytips.nl/neopixel-ws2811-raspberry-pi/"
