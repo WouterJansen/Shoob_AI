@@ -22,13 +22,11 @@ def initialSetup():
 def main():
     initialSetup()
     time.sleep(3)
-    audioReactThread = NeoPixel.AudioReact()
-    audioReactThread.daemon = True
-    audioReactThread.listening = True
-    audioReactThread.start()
-    time.sleep(5)
-    audioReactThread.listening = False
-    time.sleep(5)
+     setupNeoThread = NeoPixel.SetupGreen()
+    setupNeoThread.daemon = True
+    setupNeoThread.start()
+    time.sleep(100)
+    setupNeoThread.done = True
 
 
 if __name__ == '__main__':
