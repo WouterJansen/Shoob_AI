@@ -22,7 +22,7 @@ def initialSetup():
 def main():
     initialSetup()
     time.sleep(3)
-     setupNeoThread = NeoPixel.SetupGreen()
+    setupNeoThread = NeoPixel.SetupGreen()
     setupNeoThread.daemon = True
     setupNeoThread.start()
     time.sleep(100)
